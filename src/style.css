@@ -75,12 +75,6 @@ nav {
   width: 30%;
 }
 
-.fa-magnifying-glass {
-  z-index: 1;
-  background-color: #3AAFA8;
-  height: 25px;
-}
-
 .search-input{
   border: none;
   background-color: #2B7A78;
@@ -98,6 +92,11 @@ nav {
     display: none;
   }
 
+  a {
+    color: #123C69;
+    text-decoration: none;
+  }
+
   nav {
   display: flex;
   justify-content: space-between;
@@ -111,7 +110,19 @@ nav {
 }
 
 .mobile-nav-div {
-  /* display: none; */
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 70vh;
+  top: 0;
+  background-color: #3AAFA8;
+  font-size: 2em;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+  color: #123C69;
 }
 
 .title {
@@ -131,5 +142,43 @@ nav {
   font-size: 2rem;
   margin-right: 5%;
   color: #123C69;
+}
+
+.mobile-cat-div {
+  display: flex;
+  padding-top: 5%;
+}
+
+.mobile-categories-list {
+  color: #123C69;
+}
+
+.mobile-options {
+  background-color: #2B7A78;
+  height: 30px;
+  color: #DEF2F1;
+  font-size: 1rem;
+  border: 2px solid #4E4E50;
+}
+
+.mobile-search {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.mobile-search-input {
+  border: none;
+  background-color: #2B7A78;
+  height: 40px;
+  color: #DEF2F1;
+}
+
+.mobile-search-input::placeholder {
+  color: #1A1A1D;
+}
+
+.fa-xmark {
+  margin-left: 90%;
 }
 }
