@@ -5,6 +5,10 @@ body {
   font-family: "lato", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
 @media all and (min-width: 850px) {
   a {
     color: #123c69;
@@ -177,7 +181,7 @@ body {
     display: none;
     width: 50%;
     position: fixed;
-    height: 80vh;
+    height: 75vh;
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
@@ -188,8 +192,9 @@ body {
     align-items: center;
     gap: 5%;
     color: #123c69;
-    top: 15%;
+    top: 10%;
     left: 25%;
+    bottom: 5%;
   }
 
   .comment-close {

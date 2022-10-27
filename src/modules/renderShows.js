@@ -18,6 +18,22 @@ const renderShows = (shows) => {
                     </div>
                 </div>
             </div>
+            <div class="comments-div">
+                <i class="fa-solid comment-close fa-xmark"></i>
+                <h1 class="comment-header">Comments</h1>
+                <ul class="comments-list">
+                    
+                </ul>
+                <input type="text" class="comment-input" placeholder="Name">
+                <textarea class="comment-text"></textarea>
+                <button type="button" class="comment-btn">Add Comment</button>
+            </div>
+            <div class="series-info">
+                <i class="fa-solid info-cancel fa-xmark"></i>
+                <h1 class="info-header">INFO</h1>
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            </div>
         `;
         mainSection.insertAdjacentHTML('beforeend', html)
     })
