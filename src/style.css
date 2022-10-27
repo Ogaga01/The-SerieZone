@@ -413,4 +413,150 @@ body {
     width: 45%;
     margin-left: 3.3%;
   }
+
+  .about-series{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+    height: 100%;
+  }
+
+  .name {
+    color: #950740;
+  }
+
+  .like-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 15%;
+  }
+
+  .like-div {
+    width: 40%;
+  }
+
+  .likes {
+    color: #def2f1;
+    text-decoration: underline;
+    margin-left: 10%;
+  }
+
+  .likes-icon {
+    background-color: #2b7a78;
+    color: #123c69;
+    width: 80%;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .comment-div {
+    margin-right: 5%;
+    width: 60%;
+  }
+
+  .comment{
+    background-color: #2b7a78;
+    color: #123c69;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .comments-div {
+    display: none;
+    width: 70%;
+    position: fixed;
+    height: 80vh;
+    background-color: #3aafa8;
+    opacity: 1;
+    font-size: 1em;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    color: #123c69;
+    top: 15%;
+    left: 15%;
+  }
+
+  .comment-close {
+    font-size: 1.75rem;
+    margin-left: 85%;
+    margin-top: 3%;
+  }
+
+  .comment-header {
+    margin-top: 0%;
+    text-decoration: underline;
+  }
+
+  .comments-list {
+    width: 60%;
+    list-style-type: none;
+    margin-top: -4%;
+    height: 30vh;
+    overflow-y: scroll;
+    background-color: #2b7a78;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .comment-item {
+    margin-top: 3%;
+    background-color: #1a1a1d;
+    margin-left: -16%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .comment-input {
+    width: 30%;
+    height: 5%;
+    background-color: #2b7a78;
+    border: none;
+    margin-top: -2%;
+  }
+
+  .comment-input::placeholder {
+    color: #def2f1;
+  }
+
+  .comment-text {
+    width: 30%;
+    height: 10%;
+    border: none;
+    background-color: #2b7a78;
+    margin-top: -2%;
+  }
+
+  .comment-text::placeholder {
+    color: #def2f1;
+  }
+
+  .comment-btn {
+    background-color: #2b7a78;
+    color: #123c69;
+    border: none;
+    height: 7%;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: -1%;
+  }
+
+  .comm {
+    text-align: justify;
+  }
 }
