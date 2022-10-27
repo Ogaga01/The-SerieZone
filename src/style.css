@@ -91,6 +91,7 @@ body {
   main {
     background-color: #2b7a78;
     width: 100%;
+
     /* margin-top: 5%; */
     height: 100vh;
     display: flex;
@@ -106,7 +107,7 @@ body {
     margin-left: 4%;
   }
 
-  .about-series{
+  .about-series {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -152,7 +153,7 @@ body {
     width: 40%;
   }
 
-  .comment{
+  .comment {
     background-color: #2b7a78;
     color: #123c69;
     width: 100%;
@@ -172,6 +173,7 @@ body {
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
+
     /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
@@ -259,6 +261,7 @@ body {
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
+
     /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
@@ -323,6 +326,7 @@ body {
     width: 90%;
     margin-left: 5%;
     display: flex;
+
     /* margin-top: 10%; */
   }
 
@@ -368,6 +372,7 @@ body {
     top: 0;
     background-color: #3aafa8;
     font-size: 2em;
+
     /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
@@ -442,7 +447,7 @@ body {
     flex-wrap: wrap;
     padding-left: 0%;
   }
-  
+
   .series-div {
     background-color: #123c69;
     height: 50%;
@@ -452,7 +457,7 @@ body {
     margin-left: 3.3%;
   }
 
-  .about-series{
+  .about-series {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -498,7 +503,7 @@ body {
     width: 60%;
   }
 
-  .comment{
+  .comment {
     background-color: #2b7a78;
     color: #123c69;
     width: 100%;
@@ -518,6 +523,7 @@ body {
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
+
     /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
@@ -605,6 +611,7 @@ body {
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
+
     /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
