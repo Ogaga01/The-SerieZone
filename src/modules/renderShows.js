@@ -18,16 +18,6 @@ const renderShows = (shows) => {
                     </div>
                 </div>
             </div>
-            <div class="comments-div">
-                <i class="fa-solid comment-close fa-xmark"></i>
-                <h1 class="comment-header">Comments</h1>
-                <ul class="comments-list">
-                    
-                </ul>
-                <input type="text" class="comment-input" placeholder="Name">
-                <textarea class="comment-text"></textarea>
-                <button type="button" class="comment-btn">Add Comment</button>
-            </div>
             <div class="series-info">
                 <i class="fa-solid info-cancel fa-xmark"></i>
                 <h1 class="info-header">INFO</h1>

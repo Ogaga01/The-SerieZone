@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+.none {
+  display: none;
+}
+
 @media all and (min-width: 850px) {
   a {
     color: #123c69;
@@ -178,7 +182,6 @@ body {
   }
 
   .comments-div {
-    display: none;
     width: 50%;
     position: fixed;
     height: 75vh;
@@ -186,7 +189,6 @@ body {
     opacity: 1;
     font-size: 1em;
 
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -275,7 +277,6 @@ body {
     background-color: #3aafa8;
     font-size: 1em;
 
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -539,7 +540,6 @@ body {
   }
 
   .comments-div {
-    display: none;
     width: 70%;
     position: fixed;
     height: 80vh;
@@ -547,7 +547,6 @@ body {
     opacity: 1;
     font-size: 1em;
 
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
