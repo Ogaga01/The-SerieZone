@@ -278,6 +278,15 @@ body {
     width: 70%;
     overflow-y: scroll;
   }
+
+  .fa-circle-info {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #2b7a78;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
 }
 
 @media all and (max-width: 850px) {
