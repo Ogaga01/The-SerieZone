@@ -559,4 +559,49 @@ body {
   .comm {
     text-align: justify;
   }
+
+  .series-info {
+    /* display: none; */
+    width: 70%;
+    position: fixed;
+    height: 65vh;
+    background-color: #3aafa8;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    color: #123c69;
+    top: 15%;
+    left: 15%;
+  }
+
+  .info-cancel {
+    font-size: 1.75rem;
+    margin-left: 85%;
+    margin-top: 3%;
+  }
+
+  .info-header {
+    text-decoration: underline;
+  }
+
+  .info {
+    width: 70%;
+    overflow-y: scroll;
+  }
+
+  .fa-circle-info {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #2b7a78;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  .series-img {
+    height: 100%;
+  }
 }
