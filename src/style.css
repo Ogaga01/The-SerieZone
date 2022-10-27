@@ -111,7 +111,6 @@ body {
     justify-content: flex-end;
     padding-left: 5%;
     height: 100%;
-    position: relative;
   }
 
   .name {
@@ -250,6 +249,34 @@ body {
 
   .comm {
     text-align: justify;
+  }
+
+  .series-info {
+    display: none;
+    width: 30%;
+    position: fixed;
+    height: 65vh;
+    background-color: #3aafa8;
+    font-size: 1em;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    color: #123c69;
+    top: 15%;
+    left: 35%;
+  }
+
+  .info-cancel {
+    font-size: 1.75rem;
+    margin-left: 85%;
+    margin-top: 3%;
+  }
+
+  .info {
+    width: 70%;
+    overflow-y: scroll;
   }
 }
 
