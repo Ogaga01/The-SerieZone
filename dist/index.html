@@ -3,9 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <script src="https://kit.fontawesome.com/4f7f93e0aa.js" crossorigin="anonymous"></script>
+    <title>The SerieZone</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <nav class="nav-bar">
+        <h1 class="title">Serie<span class="zed">Z</span>one</h1>
+        <div class="nav-div">
+            <div class="cat-div">
+                <label class="categories-list">Category: </label>
+                <select class="options">
+                    <option value="all">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="crime">Crime</option>
+                    <option value="drama">Drama</option>
+                    <option value="family">Family</option>
+                    <option value="horror">Horror</option>
+                    <option value="medical">Medical</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="science-fiction">Science-fiction</option>
+                    <option value="supernatural">Supernatural</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+            <a href="https://github.com/Ogaga01" class="developer">The Developer <i class="fa-brands fa-github"></i></a>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="🔍Search Series">
+            </div>
+        </div>
+    </nav>
+    <nav class="mobile-nav">
+        <h1 class="title">Serie<span class="zed">Z</span>one</h1>
+        <i class="fa-solid fa-bars"></i>
+        <div class="mobile-nav-div">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="mobile-cat-div">
+                <label class="mobile-categories-list">Category</label>
+                <select class="mobile-options">
+                    <option value="all">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="crime">Crime</option>
+                    <option value="drama">Drama</option>
+                    <option value="family">Family</option>
+                    <option value="horror">Horror</option>
+                    <option value="medical">Medical</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="science-fiction">Science-fiction</option>
+                    <option value="supernatural">Supernatural</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+            <a href="https://github.com/Ogaga01" class="devloper">The Devloper <i class="fa-brands fa-github"></i></a>
+            <div class="search">
+                <input type="text" class="mobile-search-input" placeholder="🔍Search Series">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="series-div" id="1">
+            <i class="fa-solid fa-circle-info"></i>
+            <img src="./Assets/img1.jpg" alt="series-image" class="series-img">
+            <div class="about-series">
+                <h2 class="name">Series Name</h2>
+                <div class="like-comment">
+                    <div class="like-div">
+                        <p class="likes">2 Likes</p>
+                        <p class="likes-icon">Like <i class="fa-solid fa-thumbs-up"></i></p>
+                    </div>
+                    <div class="comment-div">
+                        <p class="comment">Comment <i class="fa-solid fa-comment"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-div">
+                <i class="fa-solid comment-close fa-xmark"></i>
+                <h1 class="comment-header">Comments</h1>
+                <ul class="comments-list">
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                </ul>
+                <input type="text" class="comment-input" placeholder=" Your Name">
+                <textarea class="comment-text" placeholder="Your Comment"></textarea>
+                <button type="button" class="comment-btn">Add Comment</button>
+            </div>
+            <div class="series-info">
+                <i class="fa-solid info-cancel fa-xmark"></i>
+                <h1 class="info-header">INFO</h1>
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div class="series-div" id="1">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="about-series">
+                <h2 class="name">Series Name</h2>
+                <div class="like-comment">
+                    <div class="like-div">
+                        <p class="likes">2 Likes</p>
+                        <p class="likes-icon">Like <i class="fa-solid fa-thumbs-up"></i></p>
+                    </div>
+                    <div class="comment-div">
+                        <p class="comment">Comment <i class="fa-solid fa-comment"></i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="comments-div">
+                <i class="fa-solid comment-close fa-xmark"></i>
+                <h1 class="comment-header">Comments</h1>
+                <ul class="comments-list">
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                </ul>
+                <input type="text" class="comment-input" placeholder="Name">
+                <textarea class="comment-text"></textarea>
+                <button type="button" class="comment-btn">Add Comment</button>
+            </div>
+            <div class="series-info">
+                <i class="fa-solid info-cancel fa-xmark"></i>
+                <h1 class="info-header">INFO</h1>
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div> -->
+        </div>
+        <div class="series-div" id="1">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="about-series">
+                <h2 class="name">Series Name</h2>
+                <div class="like-comment">
+                    <div class="like-div">
+                        <p class="likes">2 Likes</p>
+                        <p class="likes-icon">Like <i class="fa-solid fa-thumbs-up"></i></p>
+                    </div>
+                    <div class="comment-div">
+                        <p class="comment">Comment <i class="fa-solid fa-comment"></i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="comments-div">
+                <i class="fa-solid comment-close fa-xmark"></i>
+                <h1 class="comment-header">Comments</h1>
+                <ul class="comments-list">
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                </ul>
+                <input type="text" class="comment-input" placeholder="Name">
+                <textarea class="comment-text"></textarea>
+                <button type="button" class="comment-btn">Add Comment</button>
+            </div>
+            <div class="series-info">
+                <i class="fa-solid info-cancel fa-xmark"></i>
+                <h1 class="info-header">INFO</h1>
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div> -->
+        </div>
+        <div class="series-div" id="1">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="about-series">
+                <h2 class="name">Series Name</h2>
+                <div class="like-comment">
+                    <div class="like-div">
+                        <p class="likes">2 Likes</p>
+                        <p class="likes-icon">Like <i class="fa-solid fa-thumbs-up"></i></p>
+                    </div>
+                    <div class="comment-div">
+                        <p class="comment">Comment <i class="fa-solid fa-comment"></i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="comments-div">
+                <i class="fa-solid comment-close fa-xmark"></i>
+                <h1 class="comment-header">Comments</h1>
+                <ul class="comments-list">
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                    <li class="comment-item">
+                        <h3 class="person">Your Name</h3>
+                        <p class="comm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                </ul>
+                <input type="text" class="comment-input" placeholder="Name">
+                <textarea class="comment-text"></textarea>
+                <button type="button" class="comment-btn">Add Comment</button>
+            </div>
+            <div class="series-info">
+                <i class="fa-solid info-cancel fa-xmark"></i>
+                <h1 class="info-header">INFO</h1>
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div> -->
+        </div>
+    </main>
+    
+    <!-- 'https://api.tvmaze.com/shows' -->
+    <!-- style="background: url(&quot;./Assets/img1.jpg&quot;) 0% 0% / cover; display: block;" -->
 </body>
 </html>
