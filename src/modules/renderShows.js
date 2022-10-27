@@ -3,7 +3,7 @@ const mainSection = document.querySelector('.main')
 const renderShows = (shows) => {
     shows.forEach((show) => {
         const html = `
-            <div class="series-div" id="${show.id}" style="background: url(&quot;${show.image.original}&quot;) 0% 0% / cover; display: block;">
+            <div class="series-div" id="${show.id}" style="background: url(&quot;${show.image.medium}&quot;) center /  cover no-repeat; display: block;">
             <i class="fa-solid fa-circle-info"></i>
             <div class="about-series">
                 <h2 class="name">${show.name}</h2>

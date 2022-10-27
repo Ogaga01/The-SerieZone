@@ -22,13 +22,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
     font-size: 1em;
     height: 7%;
     top: 0;
+    right: 0;
+    left: 0;
   }
 
   .title {
@@ -91,8 +93,7 @@ body {
   main {
     background-color: #2b7a78;
     width: 100%;
-
-    /* margin-top: 5%; */
+    margin-top: 3%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -114,10 +115,16 @@ body {
     justify-content: flex-end;
     padding-left: 5%;
     height: 100%;
+    margin-top: -10%;
+  }
+
+  .about-series:hover {
+    background-color: #123c6973;
   }
 
   .name {
-    color: #950740;
+    color: #def2f1;
+    font-size: 2em;
   }
 
   .like-comment {
@@ -307,9 +314,11 @@ body {
     display: flex;
     margin-top: 10%;
     bottom: 0;
-    position: sticky;
+    position: fixed;
     align-items: center;
     width: 100%;
+    right: 0;
+    left: 0;
   }
 
   #cv {
@@ -355,7 +364,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
@@ -363,6 +372,8 @@ body {
     height: 10%;
     top: 0%;
     z-index: 98;
+    left: 0;
+    right: 0;
   }
 
   .mobile-nav-div {
@@ -442,7 +453,7 @@ body {
   main {
     background-color: #2b7a78;
     width: 100%;
-    margin-top: 0%;
+    margin-top: 10%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -464,10 +475,16 @@ body {
     justify-content: flex-end;
     padding-left: 5%;
     height: 100%;
+    margin-top: 0%;
+  }
+
+  .about-series:hover {
+    background-color: #123c6973;
   }
 
   .name {
-    color: #950740;
+    color: #def2f1;
+    font-size: 2em;
   }
 
   .like-comment {
@@ -657,8 +674,10 @@ body {
     height: 15vh;
     margin-top: 15%;
     bottom: 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
+    right: 0;
+    left: 0;
   }
 
   #cv {
