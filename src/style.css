@@ -99,7 +99,8 @@ body {
   }
 
   .series-div {
-    background-color: #123c69;
+    /* background-color: #123c69; */
+    display: block;
     height: 60%;
     padding-top: 0%;
     margin-top: 3%;
