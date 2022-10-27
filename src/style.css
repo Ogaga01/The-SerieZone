@@ -22,12 +22,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
-    font-size: 1.5rem;
-    height: 10%;
+    font-size: 1em;
+    height: 7%;
     top: 0;
   }
 
@@ -50,6 +50,7 @@ body {
     justify-content: space-evenly;
     gap: 3.33%;
     margin-right: -3%;
+    font-size: 1.5rem;
   }
 
   .cat-div {
@@ -90,7 +91,7 @@ body {
   main {
     background-color: #2b7a78;
     width: 100%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +275,10 @@ body {
     margin-top: 3%;
   }
 
+  .info-header {
+    text-decoration: underline;
+  }
+
   .info {
     width: 70%;
     overflow-y: scroll;
@@ -286,6 +291,10 @@ body {
     color: #2b7a78;
     margin-top: 2%;
     margin-right: 2%;
+  }
+
+  .series-img {
+    height: 100%;
   }
 }
 
@@ -303,12 +312,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
     font-size: 1rem;
     height: 10%;
+    top: 0%;
+    z-index: 98;
   }
 
   .mobile-nav-div {
@@ -382,5 +393,24 @@ body {
 
   .fa-xmark {
     margin-left: 90%;
+  }
+
+  main {
+    background-color: #2b7a78;
+    width: 100%;
+    margin-top: 0%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0%;
+  }
+  
+  .series-div {
+    background-color: #123c69;
+    height: 50%;
+    padding-top: 0%;
+    margin-top: 5%;
+    width: 45%;
+    margin-left: 3.3%;
   }
 }
