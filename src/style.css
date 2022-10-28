@@ -5,6 +5,14 @@ body {
   font-family: "lato", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
 @media all and (min-width: 850px) {
   a {
     color: #123c69;
@@ -22,13 +30,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
     font-size: 1em;
     height: 7%;
     top: 0;
+    right: 0;
+    left: 0;
   }
 
   .title {
@@ -91,15 +101,15 @@ body {
   main {
     background-color: #2b7a78;
     width: 100%;
-
-    /* margin-top: 5%; */
+    margin-top: 3%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
   }
 
   .series-div {
-    background-color: #123c69;
+    /* background-color: #123c69; */
+    display: block;
     height: 60%;
     padding-top: 0%;
     margin-top: 3%;
@@ -113,10 +123,16 @@ body {
     justify-content: flex-end;
     padding-left: 5%;
     height: 100%;
+    margin-top: -10%;
+  }
+
+  .about-series:hover {
+    background-color: #123c6973;
   }
 
   .name {
-    color: #950740;
+    color: #def2f1;
+    font-size: 2em;
   }
 
   .like-comment {
@@ -166,22 +182,20 @@ body {
   }
 
   .comments-div {
-    display: none;
     width: 50%;
     position: fixed;
-    height: 80vh;
+    height: 75vh;
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 5%;
     color: #123c69;
-    top: 15%;
+    top: 10%;
     left: 25%;
+    bottom: 5%;
   }
 
   .comment-close {
@@ -211,6 +225,7 @@ body {
   .comment-item {
     margin-top: 3%;
     background-color: #1a1a1d;
+    width: 100%;
     margin-left: -8%;
     padding-left: 3%;
     padding-right: 3%;
@@ -222,6 +237,7 @@ body {
     background-color: #2b7a78;
     border: none;
     margin-top: -2%;
+    color: #def2f1;
   }
 
   .comment-input::placeholder {
@@ -234,6 +250,7 @@ body {
     border: none;
     background-color: #2b7a78;
     margin-top: -2%;
+    color: #def2f1;
   }
 
   .comment-text::placeholder {
@@ -255,14 +272,11 @@ body {
   }
 
   .series-info {
-    display: none;
     width: 30%;
     position: fixed;
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -285,6 +299,8 @@ body {
   .info {
     width: 70%;
     overflow-y: scroll;
+    font-size: 1.5rem;
+    height: 30vh;
   }
 
   .fa-circle-info {
@@ -306,9 +322,11 @@ body {
     display: flex;
     margin-top: 10%;
     bottom: 0;
-    position: sticky;
+    position: fixed;
     align-items: center;
     width: 100%;
+    right: 0;
+    left: 0;
   }
 
   #cv {
@@ -354,7 +372,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     background-color: #3aafa8;
     width: 100%;
     margin: 0;
@@ -362,18 +380,17 @@ body {
     height: 10%;
     top: 0%;
     z-index: 98;
+    left: 0;
+    right: 0;
   }
 
   .mobile-nav-div {
-    display: none;
     width: 100%;
     position: absolute;
     height: 70vh;
     top: 0;
     background-color: #3aafa8;
     font-size: 2em;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -435,13 +452,14 @@ body {
   }
 
   .fa-xmark {
+    margin-top: 5%;
     margin-left: 90%;
   }
 
   main {
     background-color: #2b7a78;
     width: 100%;
-    margin-top: 0%;
+    margin-top: 10%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -463,10 +481,16 @@ body {
     justify-content: flex-end;
     padding-left: 5%;
     height: 100%;
+    margin-top: 0%;
+  }
+
+  .about-series:hover {
+    background-color: #123c6973;
   }
 
   .name {
-    color: #950740;
+    color: #def2f1;
+    font-size: 2em;
   }
 
   .like-comment {
@@ -516,15 +540,12 @@ body {
   }
 
   .comments-div {
-    display: none;
     width: 70%;
     position: fixed;
     height: 80vh;
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -605,14 +626,11 @@ body {
   }
 
   .series-info {
-    display: none;
     width: 70%;
     position: fixed;
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -656,8 +674,10 @@ body {
     height: 15vh;
     margin-top: 15%;
     bottom: 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
+    right: 0;
+    left: 0;
   }
 
   #cv {

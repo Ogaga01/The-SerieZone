@@ -1,8 +1,6 @@
 import './style.css';
+import fetchSeries from './modules/API';
+import mobileNav from './modules/mobileNav';
 
-const url = async () => {
-  const res = await fetch('https://api.tvmaze.com/shows');
-  const data = await res.json();
-  console.log(data);
-};
-url();
+fetchSeries();
+mobileNav();
