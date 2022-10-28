@@ -6,7 +6,7 @@ const addComments = () => {
 
     const addBtn = document.querySelectorAll(".comment-btn");
     addBtn.forEach((button) => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', () => {;
             let person;
             let text
             nameInput.forEach((name) => {
@@ -23,6 +23,7 @@ const addComments = () => {
             if(!person.value || !text.value) return
 
             postComments(button.id, person.value, text.value)
+            fetchComments(button.id);
             person.value = ''
             text.value = ''
         })

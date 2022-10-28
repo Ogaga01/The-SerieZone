@@ -8,7 +8,7 @@ const renderComments = (comment) => {
     `;
     commentList.forEach((list) => {
         list.innerHTML = ''
-        list.insertAdjacentHTML("afterbegin", html);
+        list.insertAdjacentHTML("beforeend", html);
     })
 }
 export default renderComments   
