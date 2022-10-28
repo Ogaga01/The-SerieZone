@@ -1,9 +1,6 @@
 import './style.css';
-import fetchSeries from './modules/API.js';
+import fetchSeries from './modules/API';
 import mobileNav from './modules/mobileNav';
 
-fetchSeries()
-mobileNav()
-
-
-
+fetchSeries();
+mobileNav();

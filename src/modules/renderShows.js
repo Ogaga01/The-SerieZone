@@ -1,18 +1,16 @@
-import addComments from "./addComments.js";
-import closeCommentDiv from "./closeCommenDiv.js";
-import closeInfoDiv from "./closeInfoDiv.js";
-import { fetchComments } from "./fetchComments.js";
-import renderComments from "./renderComments.js";
-import renderInfo from "./renderInfo.js";
-import showComments from "./showComments.js";
+import addComments from './addComments';
+import closeCommentDiv from './closeCommenDiv';
+import closeInfoDiv from './closeInfoDiv';
 
-const mainSection = document.querySelector('.main')
+import renderInfo from './renderInfo';
+import showComments from './showComments';
+
+const mainSection = document.querySelector('.main');
 
 const renderShows = (shows) => {
-    shows.forEach((show) => {
-
-        const newSummary = show.summary.slice(3, -4)
-        const html = `
+  shows.forEach((show) => {
+    const newSummary = show.summary.slice(3, -4);
+    const html = `
             <div class="series-div" id="${show.id}" style="background: url(&quot;${show.image.original}&quot;) center /  cover no-repeat; display: block;">
                 <i class="fa-solid fa-circle-info" id='${show.id}'></i>
                 <div class="about-series">
@@ -44,16 +42,14 @@ const renderShows = (shows) => {
                 </div>
             </div>
         `;
-        mainSection.insertAdjacentHTML('beforeend', html)
-    })
+    mainSection.insertAdjacentHTML('beforeend', html);
+  });
 
-    showComments()
-    renderInfo()
-    addComments()
-    closeCommentDiv()
-    closeInfoDiv()
+  showComments();
+  renderInfo();
+  addComments();
+  closeCommentDiv();
+  closeInfoDiv();
+};
 
-    
-}
-
-export default renderShows
+export default renderShows;

@@ -1,33 +1,33 @@
-import renderComments from "./renderComments";
+import renderComments from './renderComments';
 
-const baseurl = `https://api.tvmaze.com/shows`;
-const appurl =
-  "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xtuKKDyNMouOiOerlUhE/comments";
+const appurl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xtuKKDyNMouOiOerlUhE/comments';
 
+// eslint-disable-next-line
 const postComments = async (item_id, username, comment) => {
   fetch(appurl, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify({
-      item_id: item_id,
-      username: username,
-      comment: comment,
+      // eslint-disable-next-line
+      item_id,
+      username,
+      comment,
     }),
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
+      'Content-type': 'application/json; charset=UTF-8',
     },
   });
 };
 
+// eslint-disable-next-line
 const fetchComments = async (item_id) => {
   const response = await fetch(
+    // eslint-disable-next-line
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xtuKKDyNMouOiOerlUhE/comments?item_id=${item_id}`
   );
   const comments = await response.json();
-  console.log(comments)
-
 
   comments.forEach((comment) => {
-      renderComments(comment);
+    renderComments(comment);
   });
 };
 

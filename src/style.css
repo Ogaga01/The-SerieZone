@@ -188,7 +188,6 @@ body {
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
-
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -278,7 +277,6 @@ body {
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
-
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -393,7 +391,6 @@ body {
     top: 0;
     background-color: #3aafa8;
     font-size: 2em;
-
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -549,7 +546,6 @@ body {
     background-color: #3aafa8;
     opacity: 1;
     font-size: 1em;
-
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -630,14 +626,11 @@ body {
   }
 
   .series-info {
-
     width: 70%;
     position: fixed;
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
-
-
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
