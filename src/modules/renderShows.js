@@ -1,3 +1,6 @@
+import addComments from "./addComments.js";
+import { fetchComments } from "./fetchComments.js";
+import renderComments from "./renderComments.js";
 import renderInfo from "./renderInfo.js";
 import showComments from "./showComments.js";
 
@@ -5,6 +8,7 @@ const mainSection = document.querySelector('.main')
 
 const renderShows = (shows) => {
     shows.forEach((show) => {
+
         const newSummary = show.summary.slice(3, -4)
         const html = `
             <div class="series-div" id="${show.id}" style="background: url(&quot;${show.image.original}&quot;) center /  cover no-repeat; display: block;">
@@ -24,12 +28,12 @@ const renderShows = (shows) => {
                     <div class="comments-div none" id='${show.id}'>
                     <i class="fa-solid comment-close fa-xmark"></i>
                     <h1 class="comment-header">Comments</h1>
-                    <ul class="comments-list">
+                    <ul class="comments-list" id='${show.id}'>
                         
                     </ul>
-                    <input type="text" class="comment-input" placeholder="Name">
-                    <textarea class="comment-text"></textarea>
-                    <button type="button" class="comment-btn">Add Comment</button>
+                    <input type="text" class="comment-input" placeholder="Name" id='${show.id}'>
+                    <textarea class="comment-text" id='${show.id}' placeholder='Your Comment'></textarea>
+                    <button type="button" class="comment-btn" id='${show.id}'>Add Comment</button>
                 </div>
                 <div class="series-info none" id='${show.id}'>
                     <i class="fa-solid info-cancel fa-xmark"></i>
@@ -43,6 +47,7 @@ const renderShows = (shows) => {
 
     showComments()
     renderInfo()
+    addComments()
 
     
 }

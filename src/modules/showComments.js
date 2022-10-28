@@ -1,3 +1,5 @@
+import { fetchComments } from "./fetchComments";
+
 const showComments = () => {
     const commentDiv = document.querySelectorAll('.comments-div')
     const commentBtn = document.querySelectorAll(".comment");
@@ -7,6 +9,7 @@ const showComments = () => {
                     if (div.id === button.id) {
                     div.classList.remove('none')
                     div.classList.add('flex')
+                    fetchComments(button.id)
                 }
             })
         })
