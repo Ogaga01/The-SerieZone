@@ -298,6 +298,8 @@ body {
   .info {
     width: 70%;
     overflow-y: scroll;
+    font-size: 1.5rem;
+    height: 30vh;
   }
 
   .fa-circle-info {

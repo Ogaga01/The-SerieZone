@@ -6,6 +6,8 @@ const fetchSeries = async () => {
     const response = await fetch(baseurl)
     const data = await response.json()
 
+    console.log(data)
+
     renderShows(data)
 }
 

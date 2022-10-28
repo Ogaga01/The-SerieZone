@@ -5,6 +5,7 @@ const mainSection = document.querySelector('.main')
 
 const renderShows = (shows) => {
     shows.forEach((show) => {
+        const newSummary = show.summary.slice(3, -4)
         const html = `
             <div class="series-div" id="${show.id}" style="background: url(&quot;${show.image.original}&quot;) center /  cover no-repeat; display: block;">
                 <i class="fa-solid fa-circle-info" id='${show.id}'></i>
@@ -33,7 +34,7 @@ const renderShows = (shows) => {
                 <div class="series-info none" id='${show.id}'>
                     <i class="fa-solid info-cancel fa-xmark"></i>
                     <h1 class="info-header">INFO</h1>
-                    <p class="info">${show.summary}</p>
+                    <p class="info">${newSummary}</p>
                 </div>
             </div>
         `;
