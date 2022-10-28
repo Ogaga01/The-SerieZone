@@ -387,7 +387,6 @@ body {
   }
 
   .mobile-nav-div {
-    display: none;
     width: 100%;
     position: absolute;
     height: 70vh;
@@ -395,7 +394,6 @@ body {
     background-color: #3aafa8;
     font-size: 2em;
 
-    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
