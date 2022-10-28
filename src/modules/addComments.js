@@ -20,6 +20,8 @@ const addComments = () => {
                 }
             })
 
+            if(!person.value || !text.value) return
+
             postComments(button.id, person.value, text.value)
             person.value = ''
             text.value = ''
