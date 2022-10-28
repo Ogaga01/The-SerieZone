@@ -24,12 +24,9 @@ const fetchComments = async (item_id) => {
   );
   const comments = await response.json();
 
-  console.log(comments);
 
   comments.forEach((comment) => {
-    if (comment.id === item_id) {
       renderComments(comment);
-    }
   });
 };
 
