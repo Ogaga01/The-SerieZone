@@ -23,6 +23,7 @@ const fetchComments = async (item_id) => {
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xtuKKDyNMouOiOerlUhE/comments?item_id=${item_id}`
   );
   const comments = await response.json();
+  console.log(comments)
 
 
   comments.forEach((comment) => {

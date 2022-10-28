@@ -1,4 +1,5 @@
 import addComments from "./addComments.js";
+import closeCommentDiv from "./closeCommenDiv.js";
 import { fetchComments } from "./fetchComments.js";
 import renderComments from "./renderComments.js";
 import renderInfo from "./renderInfo.js";
@@ -48,6 +49,7 @@ const renderShows = (shows) => {
     showComments()
     renderInfo()
     addComments()
+    closeCommentDiv()
 
     
 }

@@ -7,6 +7,7 @@ const renderComments = (comment) => {
         </li>
     `;
     commentList.forEach((list) => {
+        list.innerHTML = ''
         list.insertAdjacentHTML("afterbegin", html);
     })
 }
