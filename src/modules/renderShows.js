@@ -1,5 +1,5 @@
-import renderInfo from "./renderInfo";
-import showComments from "./showComments";
+import renderInfo from "./renderInfo.js";
+import showComments from "./showComments.js";
 
 const mainSection = document.querySelector('.main')
 
