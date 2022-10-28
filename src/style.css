@@ -270,7 +270,6 @@ body {
   }
 
   .series-info {
-    display: none;
     width: 30%;
     position: fixed;
     height: 65vh;
@@ -627,14 +626,14 @@ body {
   }
 
   .series-info {
-    display: none;
+
     width: 70%;
     position: fixed;
     height: 65vh;
     background-color: #3aafa8;
     font-size: 1em;
 
-    /* display: flex; */
+
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
