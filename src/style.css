@@ -318,7 +318,7 @@ body {
 
   footer {
     background-color: #3aafa8;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     margin-top: 10%;
     bottom: 0;
@@ -671,7 +671,7 @@ body {
   footer {
     display: flex;
     background-color: #3aafa8;
-    height: 15vh;
+    height: 10vh;
     margin-top: 15%;
     bottom: 0;
     position: fixed;

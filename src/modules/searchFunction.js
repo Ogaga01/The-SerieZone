@@ -1,9 +1,7 @@
-import { startsWith } from 'lodash';
 import renderShows from './renderShows';
 
 const search = document.querySelector('.search-input');
-const baseurl = 'https://api.tvmaze.com/shows';
-const searchKey = search.value; 
+const baseurl = 'https://api.tvmaze.com/shows'; 
 
 const searchFunction = async () => {
   const response = await fetch(baseurl);
