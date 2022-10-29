@@ -11,12 +11,9 @@ const searchFunction = async () => {
     
 
     search.addEventListener('input', (e) => {
-        console.log(e.target.value)
         const [first, ...rest] = e.target.value
         const newFirst = first.toUpperCase()
         const capitalised = newFirst + rest
-        console.log(rest)
-        console.log(capitalised)
         const newData = data.filter((show) => {
             return show.name.startsWith(capitalised)
         })
