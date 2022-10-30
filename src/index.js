@@ -6,5 +6,5 @@ import categoryFunction from './modules/categoriesFunction';
 
 fetchSeries();
 mobileNav();
-searchFunction()
-categoryFunction()
+searchFunction();
+categoryFunction();
