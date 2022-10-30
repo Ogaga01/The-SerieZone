@@ -8,6 +8,7 @@ import showComments from './showComments';
 const mainSection = document.querySelector('.main');
 
 const renderShows = (shows) => {
+  mainSection.innerHTML = '';
   shows.forEach((show) => {
     const newSummary = show.summary.slice(3, -4);
     const html = `
