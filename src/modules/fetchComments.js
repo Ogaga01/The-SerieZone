@@ -27,18 +27,18 @@ const fetchComments = async (item_id) => {
   const comments = await response.json();
 
   comments.forEach((comment) => {
-   const commentList = document.querySelectorAll(".comments-list");
-   const html = `
+    const commentList = document.querySelectorAll(".comments-list");
+    const html = `
         <li class="comment-item">
             <h3 class="person">${comment.username}</h3>
             <p class="comm">${comment.comment}</p>
         </li>
     `;
-   commentList.forEach((list) => {
-     if (list.id === item_id) {
-       list.insertAdjacentHTML("afterbegin", html);
-     }
-   });
+    commentList.forEach((list) => {
+      if (list.id === item_id) {
+        list.insertAdjacentHTML("afterbegin", html);
+      }
+    });
   });
 };
 
